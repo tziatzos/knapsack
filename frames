@@ -1,0 +1,16 @@
+#!/bin/bash
+for n in  10 50 100 500
+
+do
+for r in  50 100 500 1000
+	do
+for type in  1 2 3 4
+		do
+		for f in  1 2 3 4 5
+			do
+	./generator $n $r $t $f 5 
+	mv test.in problem_$n"_"$r"_"$type"_"$f"_"5.txt
+done
+done
+done
+done
